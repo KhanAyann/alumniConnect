@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni-Student Connect Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="sidebar">
+        <!-- Sidebar content remains unchanged -->
+        <h2>ALUMNI-STUDENT</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="connect.html"><i class="fas fa-user-friends"></i> Connect</a></li>
+            <li><a href="sessions.html"><i class="fas fa-video"></i> Sessions</a></li>
+            <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Jobs/Internships</a></li>
+            <li><a href="Profile.html"><i class="fas fa-user-circle"></i> Profile</a></li>
+            <li><a href="#"><i class="fas fa-comments"></i> Messages</a></li>
+            <li><a href="#"><i class="fas fa-link"></i> Connections</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <!-- Navbar content remains unchanged -->
+            <input placeholder="Type A Keyword" type="text" />
+            <div class="profile">
+                <div class="notification">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">1</span>
+                </div>
+                <img alt="Profile Picture" height="40" src="WIN_20240531_15_52_40_Pro.jpg" width="40" />
+            </div>
+        </div>
+
+        <!-- Greeting Section -->
+<div class="greeting-section">
+  <h2>Welcome Back, [User Name]!</h2>
+  <p>"Your network is your net worth. Let's connect and grow together!"</p>
+</div>
+
+
+        <!-- News Slider -->
+<div class="news-slider">
+  <button class="arrow left" onclick="moveSlider(-1)">&#10094;</button>
+  <button class="arrow right" onclick="moveSlider(1)">&#10095;</button>
+  <div class="news-wrapper">
+      <div class="news-item">
+          <h3>Exciting New Features Coming Soon!</h3>
+          <img src="newfeatures.jpeg" alt="Feature News">
+          <p>We're rolling out new features next month to enhance your experience. Stay tuned for updates!</p>
+      </div>
+      <div class="news-item">
+          <h3>Upcoming Webinar on Career Development</h3>
+          <img src="webinar.jpg" alt="Webinar News">
+          <p>Join our webinar to learn about career advancement tips from industry experts.</p>
+      </div>
+      <div class="news-item">
+          <h3>New Alumni Mentorship Program</h3>
+          <img src="achivementPic.jpeg" alt="Mentorship News">
+          <p>We are launching a new mentorship program to connect students with experienced alumni.</p>
+      </div>
+      <div class="news-item">
+          <h3>New Partnership with Leading Tech Companies</h3>
+          <img src="#" alt="Partnership News">
+          <p>Our platform has partnered with top tech companies to provide exclusive internship opportunities.</p>
+      </div>
+      <div class="news-item">
+          <h3>Recent Alumni Achievements</h3>
+          <img src="https://via.placeholder.com/800x400" alt="Achievements News">
+          <p>Read about the latest achievements of our alumni and how they're making an impact in their fields.</p>
+      </div>
+  </div>
+</div>
+
+<!-- Featured Alumni/Student Stories -->
+<div class="stories">
+  <h2>Featured Stories</h2>
+  <div class="story-card">
+      <h3>John Doe's Journey</h3>
+      <p>Read how John, an alumnus, built a successful career in Data Science...</p>
+      <button>Read More</button>
+  </div>
+  <div class="story-card">
+      <h3>Jane Smith's Success</h3>
+      <p>Jane shares her experience on landing her dream internship...</p>
+      <button>Read More</button>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

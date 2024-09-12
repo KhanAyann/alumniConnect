@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile View/Edit</title>
+  <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+  <!-- <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Mentorship</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+  <section class="profile-view-edit-section">
+    <h2>Profile Details</h2>
+    
+    <!-- Profile Display Section -->
+    <div id="profileDetails">
+      <img id="profilePhoto" src="default-avatar.png" alt="Profile Photo" width="100" height="100">
+      <p><strong>Name:</strong> <span id="displayName"></span></p>
+      <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      <p><strong>Career Path:</strong> <span id="displayCareer"></span></p>
+      <p><strong>Skills:</strong> <span id="displaySkills"></span></p>
+      <p><strong>Bio:</strong> <span id="displayBio"></span></p>
+      <p><strong>College ID:</strong> <span id="displayCollegeID"></span></p>
+      <p><strong>Passout Year:</strong> <span id="displayPassoutYear"></span></p>
+      <p><strong>Experience:</strong> <span id="displayExperience"></span></p>
+      <p><strong>Internship:</strong> <span id="displayInternship"></span></p>
+    </div>
+
+    <!-- Button to show edit form -->
+    <button id="editButton">Edit Profile</button>
+
+    <!-- Profile Edit Form (Hidden by default) -->
+    <form id="editProfileForm" style="display: none;">
+      <label for="editPhoto">Profile Photo:</label>
+      <input type="file" id="editPhoto" accept="image/*">
+      
+      <label for="editName">Full Name:</label>
+      <input type="text" id="editName" required>
+      
+      <label for="editEmail">Email:</label>
+      <input type="email" id="editEmail" required>
+      
+      <label for="editCareer">Career Path:</label>
+      <input type="text" id="editCareer" required>
+      
+      <label for="editSkills">Skills:</label>
+      <input type="text" id="editSkills" required>
+      
+      <label for="editBio">Short Bio:</label>
+      <textarea id="editBio" rows="5"></textarea>
+      
+      <label for="editCollegeID">College ID:</label>
+      <input type="text" id="editCollegeID" required>
+      
+      <label for="editPassoutYear">Passout Year:</label>
+      <input type="number" id="editPassoutYear" required>
+      
+      <label for="editExperience">Experience:</label>
+      <input type="text" id="editExperience" required>
+      
+      <label for="editInternship">Internship:</label>
+      <input type="text" id="editInternship" required>
+      
+      <button type="submit">Save Changes</button>
+    </form>
+  </section>
+
+  <script src="Profile.js"></script>
+</body>
+</html>

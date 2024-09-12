@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion Feature</title>
+  <link rel="stylesheet" href="community.css">
+</head>
+<body>
+
+  <section class="discussion-section">
+    <h2>Community Discussions</h2>
+
+    <!-- Post Container -->
+    <div class="post-container" id="postContainer">
+      <!-- Dynamic content will be added here using JavaScript -->
+    </div>
+
+    <!-- Floating Plus Button -->
+    <div class="floating-plus-btn" id="addPostBtn">
+      <span>+</span>
+    </div>
+
+    <!-- Modal for Adding Post -->
+    <div class="modal" id="postModal">
+      <div class="modal-content">
+        <h3>Create New Post</h3>
+        <textarea id="postText" placeholder="What's on your mind?"></textarea>
+        <input type="file" id="postImage" accept="image/*">
+        <button id="submitPostBtn">Post</button>
+        <button id="cancelPostBtn">Cancel</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="community.js"></script>
+</body>
+</html>
